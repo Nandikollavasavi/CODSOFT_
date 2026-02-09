@@ -4,7 +4,6 @@ def calculator():
     print("=== Simple Calculator ===")
     
     try:
-        # Prompt user for input
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
         
@@ -16,7 +15,6 @@ def calculator():
         
         choice = input("Enter choice (1/2/3/4 or + - * /): ")
         
-        # Perform calculation
         if choice in ("1", "+"):
             result = num1 + num2
             print(f"Result: {num1} + {num2} = {result}")
@@ -38,5 +36,5 @@ def calculator():
     except ValueError:
         print("Invalid input. Please enter numeric values.")
 
-# Run the calculator
 calculator()
+
